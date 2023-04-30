@@ -187,46 +187,6 @@ def CreateCourse():
 
 
 # Login API
-'''
-@app.route('/UserLogin', methods = ['POST'])
-def UserLogin():
-    try:
-        psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
-        cursor = psql.cursor()
-        data=request.get_json()
-
-        adminID= data['adminID']
-        password= data['password']
-        #cursor.execute(f"SELECT * FROM clonevle_db.Students WHERE Students.studentID = {studentID}")
-        #print(f"SELECT * FROM admins WHERE adminID = {adminID}")
-        cursor.execute(f'SELECT * FROM admins WHERE "adminID" = {adminID}')
-        row = cursor.fetchone()
-        user = {}
-        psql.commit()
-        cursor.close()
-        psql.close()
-        
-        if row is not None:
-            adminID, firstname,lastname,password = row
-            user['adminID'] = adminID
-            user['firstname']= firstname
-            user['lastname']= lastname
-           # user['email']=email
-            user['password'] = password 
-            #return ({"error": "No customer found with id "}, 404)
-            if password == data['password']:
-              message = "Successfully logged in as: {}".format(user['firstname'])
-              return make_response(message, 200)  
-            else:
-                return make_response({'error': 'Invalid password. Please try again.'}, 400)
-        else:
-            return make_response({'error': 'Invalid username. Please try again.'}, 400)
-    except Exception as e:
-        print(e)
-        #print(adminID)
-        return make_response({'error': 'User not found'}, 400)
-'''
-
 IsAdmin = False
 @app.route('/UserLogin', methods = ['POST'])
 def UserLogin():
@@ -323,7 +283,7 @@ def UserLogin():
 
 
 
-import random
+#import random
 #Enroll Student 
 @app.route('/EnrollStudent',methods = ['POST'])
 def EnrollStudent():
@@ -416,31 +376,128 @@ def EnrollStudent():
         print(e)
         #print(adminID)
         return make_response({'error': 'User not found'}, 400)
+    
+#----------------------------------------------------Course Container---------------------------------------------------------#
+#Retrieve Members of a courses container
+#@app.route('/RetrieveMembers', methods=['GET'])
+#def RetrieveMembers
+#
+#
+#Create Calendar Event for course
+# 
+# Retrieve Calendar Event
+# 
+# 
+# Create Forum for course
+# 
+# 
+# Retrieve Forum for course
+# 
+# Retrieve discussion thread for forum
+# 
+# 
+# 
+# Create Assignment
+# 
+#
+# 
+# Add grade for assignment
+# 
+# 
+#  #
 
 #----------------------------------------------------REPORTS---------------------------------------------------------#
 
 # Returns Courses with 50 or more students 
-# 
-# 
-# 
-# 
-# 
-# 
-# 
+@app.route('/CourseReport', methods=['GET'])
+def CourseReport():
+    try:
+        psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
+        cursor = psql.cursor()
+        #data=request.get_json()
+        #cursor.execute('SELECT courseid COUNT(userid) FROM enroll JOIN enroll ON courses.ccode HAVING COUNT(userid) >=50')
+        sql='SELECT c."courseName", COUNT(DISTINCT e.userid) AS enrolled FROM enroll e JOIN courses c ON e."courseid" = c."ccode" GROUP BY c."ccode", c."courseName" HAVING COUNT(DISTINCT e.userid) >= 50;'
+        cursor.execute(sql)
+        courselist=[]
+        for courseName, studentCount in cursor:
+            course={}
+            course["courseName"]= courseName
+            course["studentCount"]=studentCount
+            courselist.append(course)
+        cursor.close()
+        psql.close()
+        return make_response({'courselist': courselist}, 200)
+        
+    except Exception as e:
+        print(e)
+        return make_response({'error':'An error has occured, could not return all courses that  have  50 or more students'}, 400)
+
+
+
+
 # All lecturers that teaches 3 or more courses will be
+@app.route('/LecturerReport', methods=['GET'])
+def LecturerReport():
+    try:
+        psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
+        cursor = psql.cursor()
+        sql='SELECT l.firstname, l.lastname, COUNT(DISTINCT e.courseid) AS num_courses FROM enrolllecturer e JOIN lecturers l ON e.userid = l."lecturerID" GROUP BY l."lecturerID", l.firstname, l.lastname HAVING COUNT(DISTINCT e.courseid) >= 3;'
+        cursor.execute(sql)        
+        lecturerslist=[]
+        for firstname, lastname, num_courses in cursor:
+            lecturer={}
+            lecturer["firstname"]= firstname
+            lecturer["lastname"]= lastname
+            lecturer["num_courses"]= num_courses
+            lecturerslist.append(lecturer)
+        cursor.close()
+        psql.close()
+
+        return make_response({'lecturerlist': lecturerslist}, 200)
+    except Exception as e:
+        print(e)
+        return make_response({'error':'An error has occured, could not return the lectures that teach 3 or more courses'}, 400)
+
+
+
+
+
+
 # 
 # 
 # 
-# 
-# 
-# 
+
+
 # All students that do 5 or more courses
-# 
+@app.route('/StudentReport', methods=['GET'])
+def StudentReport():
+    try:
+        psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
+        cursor = psql.cursor()
+        sql='SELECT s."studentID",s.firstname,s.lastname, COUNT(DISTINCT e.courseid) AS num_courses FROM enroll e JOIN students s ON e.userid = s."studentID" GROUP BY s."studentID", s."firstname", s."lastname" HAVING COUNT(DISTINCT e.courseid) >= 5;'
+        cursor.execute(sql)
+        studentlist=[]
+        for studentID,firstname,lastname,num_course in cursor:
+            student={}
+            student["studentID"] = studentID
+            student["firstname"]= firstname
+            student["lastname"] = lastname
+            student["num_course"] = num_course
+
+            studentlist.append(student)
+
+        cursor.close()
+        psql.close()
+        return make_response({'studentlist': studentlist}, 200)
+    except Exception as e:
+        print(e)
+        return make_response({'error':'An error has occured, could not return allstudents that do 5 or more courses'},400)
 # 
 
 
 # Top 10 most enrolled course
-# 
+@app.route('/mostenrolledreport', methods=['GET'])
+def mostenrolledreport():
 # 
 
 
@@ -448,4 +505,13 @@ def EnrollStudent():
 # Top 10 students with highest overall averages
 
 
-
+#Total number of courses
+# 
+# 
+# Total number of lecturers
+# 
+# 
+# Total number of students
+# 
+# 
+# #

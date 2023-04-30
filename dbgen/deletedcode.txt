@@ -1,0 +1,37 @@
+# @app.route('/UserLogin', methods = ['POST'])
+# def UserLogin():
+#     try:
+#         psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
+#         cursor = psql.cursor()
+#         data=request.get_json()
+
+#         adminID= data['adminID']
+#         password= data['password']
+#         #cursor.execute(f"SELECT * FROM clonevle_db.Students WHERE Students.studentID = {studentID}")
+#         #print(f"SELECT * FROM admins WHERE adminID = {adminID}")
+#         cursor.execute(f'SELECT * FROM admins WHERE "adminID" = {adminID}')
+#         row = cursor.fetchone()
+#         user = {}
+#         psql.commit()
+#         cursor.close()
+#         psql.close()
+        
+#         if row is not None:
+#             adminID, firstname,lastname,password = row
+#             user['adminID'] = adminID
+#             user['firstname']= firstname
+#             user['lastname']= lastname
+#            # user['email']=email
+#             user['password'] = password 
+#             #return ({"error": "No customer found with id "}, 404)
+#             if password == data['password']:
+#               message = "Successfully logged in as: {}".format(user['firstname'])
+#               return make_response(message, 200)  
+#             else:
+#                 return make_response({'error': 'Invalid password. Please try again.'}, 400)
+#         else:
+#             return make_response({'error': 'Invalid username. Please try again.'}, 400)
+#     except Exception as e:
+#         print(e)
+#         #print(adminID)
+#         return make_response({'error': 'User not found'}, 400)
