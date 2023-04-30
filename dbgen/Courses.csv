@@ -1,0 +1,351 @@
+﻿Ccode,CourseName,StartDate,EndDate
+MATH1001,Advanced Mathematics I,01/09/2023,31/12/2023
+MATH2001,Introductory Mathematics I,01/09/2023,31/12/2023
+MATH3001,Fundamental Mathematics I,01/09/2023,31/12/2023
+MATH4001,Applied Mathematics I,01/09/2023,31/12/2023
+MATH5001,Theoretical Mathematics I,01/09/2023,31/12/2023
+MATH6001,Experimental Mathematics I,01/09/2023,31/12/2023
+MATH7001,Computational Mathematics I,01/09/2023,31/12/2023
+MATH8001,Statistical Mathematics I,01/09/2023,31/12/2023
+MATH1003,Advanced Mathematics II,01/09/2023,31/12/2023
+MATH2003,Introductory Mathematics II,01/09/2023,31/12/2023
+MATH3003,Fundamental Mathematics II,01/09/2023,31/12/2023
+MATH4003,Applied Mathematics II,01/09/2023,31/12/2023
+MATH5003,Theoretical Mathematics II,01/09/2023,31/12/2023
+MATH6003,Experimental Mathematics II,01/09/2023,31/12/2023
+MATH7003,Computational Mathematics II,01/09/2023,31/12/2023
+MATH8003,Statistical Mathematics II,01/09/2023,31/12/2023
+MATH1005,Advanced Mathematics III,01/09/2023,31/12/2023
+MATH2005,Introductory Mathematics III,01/09/2023,31/12/2023
+MATH3005,Fundamental Mathematics III,01/09/2023,31/12/2023
+MATH4005,Applied Mathematics III,01/09/2023,31/12/2023
+MATH5005,Theoretical Mathematics III,01/09/2023,31/12/2023
+MATH6005,Experimental Mathematics III,01/09/2023,31/12/2023
+MATH7005,Computational Mathematics III,01/09/2023,31/12/2023
+MATH8005,Statistical Mathematics III,01/09/2023,31/12/2023
+MATH1007,Advanced Mathematics IV,01/09/2023,31/12/2023
+MATH2007,Introductory Mathematics IV,01/09/2023,31/12/2023
+MATH3007,Fundamental Mathematics IV,01/09/2023,31/12/2023
+MATH4007,Applied Mathematics IV,01/09/2023,31/12/2023
+MATH5007,Theoretical Mathematics IV,01/09/2023,31/12/2023
+MATH6007,Experimental Mathematics IV,01/09/2023,31/12/2023
+MATH7007,Computational Mathematics IV,01/09/2023,31/12/2023
+MATH8007,Statistical Mathematics IV,01/09/2023,31/12/2023
+MATH1009,Advanced Mathematics V,01/09/2023,31/12/2023
+MATH2009,Introductory Mathematics V,01/09/2023,31/12/2023
+MATH3009,Fundamental Mathematics V,01/09/2023,31/12/2023
+MATH4009,Applied Mathematics V,01/09/2023,31/12/2023
+MATH5009,Theoretical Mathematics V,01/09/2023,31/12/2023
+MATH6009,Experimental Mathematics V,01/09/2023,31/12/2023
+MATH7009,Computational Mathematics V,01/09/2023,31/12/2023
+MATH8009,Statistical Mathematics V,01/09/2023,31/12/2023
+MATH1011,Advanced Mathematics  I,01/09/2023,31/12/2023
+MATH2011,Introductory Mathematics  I,01/09/2023,31/12/2023
+MATH3011,Fundamental Mathematics  I,01/09/2023,31/12/2023
+MATH4011,Applied Mathematics  I,01/09/2023,31/12/2023
+MATH5011,Theoretical Mathematics  I,01/09/2023,31/12/2023
+MATH6011,Experimental Mathematics  I,01/09/2023,31/12/2023
+MATH7011,Computational Mathematics  I,01/09/2023,31/12/2023
+MATH8011,Statistical Mathematics  I,01/09/2023,31/12/2023
+MATH1013,Advanced Mathematics  II,01/09/2023,31/12/2023
+MATH2013,Introductory Mathematics  II,01/09/2023,31/12/2023
+MATH3013,Fundamental Mathematics  II,01/09/2023,31/12/2023
+MATH4013,Applied Mathematics  II,01/09/2023,31/12/2023
+MATH5013,Theoretical Mathematics  II,01/09/2023,31/12/2023
+MATH6013,Experimental Mathematics  II,01/09/2023,31/12/2023
+MATH7013,Computational Mathematics  II,01/09/2023,31/12/2023
+MATH8013,Statistical Mathematics  II,01/09/2023,31/12/2023
+MATH1015,Advanced Mathematics  III,01/09/2023,31/12/2023
+MATH2015,Introductory Mathematics  III,01/09/2023,31/12/2023
+MATH3015,Fundamental Mathematics  III,01/09/2023,31/12/2023
+MATH4015,Applied Mathematics  III,01/09/2023,31/12/2023
+MATH5015,Theoretical Mathematics  III,01/09/2023,31/12/2023
+MATH6015,Experimental Mathematics  III,01/09/2023,31/12/2023
+MATH7015,Computational Mathematics  III,01/09/2023,31/12/2023
+MATH8015,Statistical Mathematics  III,01/09/2023,31/12/2023
+MATH1017,Advanced Mathematics  IV,01/09/2023,31/12/2023
+MATH2017,Introductory Mathematics  IV,01/09/2023,31/12/2023
+MATH3017,Fundamental Mathematics  IV,01/09/2023,31/12/2023
+MATH4017,Applied Mathematics  IV,01/09/2023,31/12/2023
+MATH5017,Theoretical Mathematics  IV,01/09/2023,31/12/2023
+MATH6017,Experimental Mathematics  IV,01/09/2023,31/12/2023
+MATH7017,Computational Mathematics  IV,01/09/2023,31/12/2023
+MATH8017,Statistical Mathematics  IV,01/09/2023,31/12/2023
+MATH1019,Advanced Mathematics  V,01/09/2023,31/12/2023
+MATH2019,Introductory Mathematics  V,01/09/2023,31/12/2023
+MATH3019,Fundamental Mathematics  V,01/09/2023,31/12/2023
+MATH4019,Applied Mathematics  V,01/09/2023,31/12/2023
+MATH5019,Theoretical Mathematics  V,01/09/2023,31/12/2023
+MATH6019,Experimental Mathematics  V,01/09/2023,31/12/2023
+MATH7019,Computational Mathematics  V,01/09/2023,31/12/2023
+MATH8019,Statistical Mathematics  V,01/09/2023,31/12/2023
+PHYS1021,Advanced Physics I,01/09/2023,31/12/2023
+PHYS2021,Introductory Physics I,01/09/2023,31/12/2023
+PHYS3021,Fundamental Physics I,01/09/2023,31/12/2023
+PHYS4021,Applied Physics I,01/09/2023,31/12/2023
+PHYS5021,Theoretical Physics I,01/09/2023,31/12/2023
+PHYS6021,Experimental Physics I,01/09/2023,31/12/2023
+PHYS7021,Computational Physics I,01/09/2023,31/12/2023
+PHYS8021,Statistical Physics I,01/09/2023,31/12/2023
+PHYS1023,Advanced Physics II,01/09/2023,31/12/2023
+PHYS2023,Introductory Physics II,01/09/2023,31/12/2023
+PHYS3023,Fundamental Physics II,01/09/2023,31/12/2023
+PHYS4023,Applied Physics II,01/09/2023,31/12/2023
+PHYS5023,Theoretical Physics II,01/09/2023,31/12/2023
+PHYS6023,Experimental Physics II,01/09/2023,31/12/2023
+PHYS7023,Computational Physics II,01/09/2023,31/12/2023
+PHYS8023,Statistical Physics II,01/09/2023,31/12/2023
+PHYS1025,Advanced Physics III,01/09/2023,31/12/2023
+PHYS2025,Introductory Physics III,01/09/2023,31/12/2023
+PHYS3025,Fundamental Physics III,01/09/2023,31/12/2023
+PHYS4025,Applied Physics III,01/09/2023,31/12/2023
+PHYS5025,Theoretical Physics III,01/09/2023,31/12/2023
+PHYS6025,Experimental Physics III,01/09/2023,31/12/2023
+PHYS7025,Computational Physics III,01/09/2023,31/12/2023
+PHYS8025,Statistical Physics III,01/09/2023,31/12/2023
+PHYS1027,Advanced Physics IV,01/09/2023,31/12/2023
+PHYS2027,Introductory Physics IV,01/09/2023,31/12/2023
+PHYS3027,Fundamental Physics IV,01/09/2023,31/12/2023
+PHYS4027,Applied Physics IV,01/09/2023,31/12/2023
+PHYS5027,Theoretical Physics IV,01/09/2023,31/12/2023
+PHYS6027,Experimental Physics IV,01/09/2023,31/12/2023
+PHYS7027,Computational Physics IV,01/09/2023,31/12/2023
+PHYS8027,Statistical Physics IV,01/09/2023,31/12/2023
+PHYS1029,Advanced Physics V,01/09/2023,31/12/2023
+PHYS2029,Introductory Physics V,01/09/2023,31/12/2023
+PHYS3029,Fundamental Physics V,01/09/2023,31/12/2023
+PHYS4029,Applied Physics V,01/09/2023,31/12/2023
+PHYS5029,Theoretical Physics V,01/09/2023,31/12/2023
+PHYS6029,Experimental Physics V,01/09/2023,31/12/2023
+PHYS7029,Computational Physics V,01/09/2023,31/12/2023
+PHYS8029,Statistical Physics V,01/09/2023,31/12/2023
+CHEM1031,Advanced Chemistry I,01/09/2023,31/12/2023
+CHEM2031,Introductory Chemistry I,01/09/2023,31/12/2023
+CHEM3031,Fundamental Chemistry I,01/09/2023,31/12/2023
+CHEM4031,Applied Chemistry I,01/09/2023,31/12/2023
+CHEM5031,Theoretical Chemistry I,01/09/2023,31/12/2023
+CHEM6031,Experimental Chemistry I,01/09/2023,31/12/2023
+CHEM7031,Computational Chemistry I,01/09/2023,31/12/2023
+CHEM8031,Statistical Chemistry I,01/09/2023,31/12/2023
+CHEM1033,Advanced Chemistry II,01/09/2023,31/12/2023
+CHEM2033,Introductory Chemistry II,01/09/2023,31/12/2023
+CHEM3033,Fundamental Chemistry II,01/09/2023,31/12/2023
+CHEM4033,Applied Chemistry II,01/09/2023,31/12/2023
+CHEM5033,Theoretical Chemistry II,01/09/2023,31/12/2023
+CHEM6033,Experimental Chemistry II,01/09/2023,31/12/2023
+CHEM7033,Computational Chemistry II,01/09/2023,31/12/2023
+CHEM8033,Statistical Chemistry II,01/09/2023,31/12/2023
+CHEM1035,Advanced Chemistry III,01/09/2023,31/12/2023
+CHEM2035,Introductory Chemistry III,01/09/2023,31/12/2023
+CHEM3035,Fundamental Chemistry III,01/09/2023,31/12/2023
+CHEM4035,Applied Chemistry III,01/09/2023,31/12/2023
+CHEM5035,Theoretical Chemistry III,01/09/2023,31/12/2023
+CHEM6035,Experimental Chemistry III,01/09/2023,31/12/2023
+CHEM7035,Computational Chemistry III,01/09/2023,31/12/2023
+CHEM8035,Statistical Chemistry III,01/09/2023,31/12/2023
+CHEM1037,Advanced Chemistry IV,01/09/2023,31/12/2023
+CHEM2037,Introductory Chemistry IV,01/09/2023,31/12/2023
+CHEM3037,Fundamental Chemistry IV,01/09/2023,31/12/2023
+CHEM4037,Applied Chemistry IV,01/09/2023,31/12/2023
+CHEM5037,Theoretical Chemistry IV,01/09/2023,31/12/2023
+CHEM6037,Experimental Chemistry IV,01/09/2023,31/12/2023
+CHEM7037,Computational Chemistry IV,01/09/2023,31/12/2023
+CHEM8037,Statistical Chemistry IV,01/09/2023,31/12/2023
+CHEM1039,Advanced Chemistry V,01/09/2023,31/12/2023
+CHEM2039,Introductory Chemistry V,01/09/2023,31/12/2023
+CHEM3039,Fundamental Chemistry V,01/09/2023,31/12/2023
+CHEM4039,Applied Chemistry V,01/09/2023,31/12/2023
+CHEM5039,Theoretical Chemistry V,01/09/2023,31/12/2023
+CHEM6039,Experimental Chemistry V,01/09/2023,31/12/2023
+CHEM7039,Computational Chemistry V,01/09/2023,31/12/2023
+CHEM8039,Statistical Chemistry V,01/09/2023,31/12/2023
+BIOL1041,Advanced Biology I,01/09/2023,31/12/2023
+BIOL2041,Introductory Biology I,01/09/2023,31/12/2023
+BIOL3041,Fundamental Biology I,01/09/2023,31/12/2023
+BIOL4041,Applied Biology I,01/09/2023,31/12/2023
+BIOL5041,Theoretical Biology I,01/09/2023,31/12/2023
+BIOL6041,Experimental Biology I,01/09/2023,31/12/2023
+BIOL7041,Computational Biology I,01/09/2023,31/12/2023
+BIOL8041,Statistical Biology I,01/09/2023,31/12/2023
+BIOL1043,Advanced Biology II,01/09/2023,31/12/2023
+BIOL2043,Introductory Biology II,01/09/2023,31/12/2023
+BIOL3043,Fundamental Biology II,01/09/2023,31/12/2023
+BIOL4043,Applied Biology II,01/09/2023,31/12/2023
+BIOL5043,Theoretical Biology II,01/09/2023,31/12/2023
+BIOL6043,Experimental Biology II,01/09/2023,31/12/2023
+BIOL7043,Computational Biology II,01/09/2023,31/12/2023
+BIOL8043,Statistical Biology II,01/09/2023,31/12/2023
+BIOL1045,Advanced Biology III,01/09/2023,31/12/2023
+BIOL2045,Introductory Biology III,01/09/2023,31/12/2023
+BIOL3045,Fundamental Biology III,01/09/2023,31/12/2023
+BIOL4045,Applied Biology III,01/09/2023,31/12/2023
+BIOL5045,Theoretical Biology III,01/09/2023,31/12/2023
+BIOL6045,Experimental Biology III,01/09/2023,31/12/2023
+BIOL7045,Computational Biology III,01/09/2023,31/12/2023
+BIOL8045,Statistical Biology III,01/09/2023,31/12/2023
+BIOL1047,Advanced Biology IV,01/09/2023,31/12/2023
+BIOL2047,Introductory Biology IV,01/09/2023,31/12/2023
+BIOL3047,Fundamental Biology IV,01/09/2023,31/12/2023
+BIOL4047,Applied Biology IV,01/09/2023,31/12/2023
+BIOL5047,Theoretical Biology IV,01/09/2023,31/12/2023
+BIOL6047,Experimental Biology IV,01/09/2023,31/12/2023
+BIOL7047,Computational Biology IV,01/09/2023,31/12/2023
+BIOL8047,Statistical Biology IV,01/09/2023,31/12/2023
+BIOL1049,Advanced Biology V,01/09/2023,31/12/2023
+BIOL2049,Introductory Biology V,01/09/2023,31/12/2023
+BIOL3049,Fundamental Biology V,01/09/2023,31/12/2023
+BIOL4049,Applied Biology V,01/09/2023,31/12/2023
+BIOL5049,Theoretical Biology V,01/09/2023,31/12/2023
+BIOL6049,Experimental Biology V,01/09/2023,31/12/2023
+BIOL7049,Computational Biology V,01/09/2023,31/12/2023
+BIOL8049,Statistical Biology V,01/09/2023,31/12/2023
+COMP1051,Advanced Computer Science I,01/09/2023,31/12/2023
+COMP2051,Introductory Computer Science I,01/09/2023,31/12/2023
+COMP3051,Fundamental Computer Science I,01/09/2023,31/12/2023
+COMP4051,Applied Computer Science I,01/09/2023,31/12/2023
+COMP5051,Theoretical Computer Science I,01/09/2023,31/12/2023
+COMP6051,Experimental Computer Science I,01/09/2023,31/12/2023
+COMP7051,Computational Computer Science I,01/09/2023,31/12/2023
+COMP8051,Statistical Computer Science I,01/09/2023,31/12/2023
+COMP1053,Advanced Computer Science II,01/09/2023,31/12/2023
+COMP2053,Introductory Computer Science II,01/09/2023,31/12/2023
+COMP3053,Fundamental Computer Science II,01/09/2023,31/12/2023
+COMP4053,Applied Computer Science II,01/09/2023,31/12/2023
+COMP5053,Theoretical Computer Science II,01/09/2023,31/12/2023
+COMP6053,Experimental Computer Science II,01/09/2023,31/12/2023
+COMP7053,Computational Computer Science II,01/09/2023,31/12/2023
+COMP8053,Statistical Computer Science II,01/09/2023,31/12/2023
+COMP1055,Advanced Computer Science III,01/09/2023,31/12/2023
+COMP2055,Introductory Computer Science III,01/09/2023,31/12/2023
+COMP3055,Fundamental Computer Science III,01/09/2023,31/12/2023
+COMP4055,Applied Computer Science III,01/09/2023,31/12/2023
+COMP5055,Theoretical Computer Science III,01/09/2023,31/12/2023
+COMP6055,Experimental Computer Science III,01/09/2023,31/12/2023
+COMP7055,Computational Computer Science III,01/09/2023,31/12/2023
+COMP8055,Statistical Computer Science III,01/09/2023,31/12/2023
+COMP1057,Advanced Computer Science IV,01/09/2023,31/12/2023
+COMP2057,Introductory Computer Science IV,01/09/2023,31/12/2023
+COMP3057,Fundamental Computer Science IV,01/09/2023,31/12/2023
+COMP4057,Applied Computer Science IV,01/09/2023,31/12/2023
+COMP5057,Theoretical Computer Science IV,01/09/2023,31/12/2023
+COMP6057,Experimental Computer Science IV,01/09/2023,31/12/2023
+COMP7057,Computational Computer Science IV,01/09/2023,31/12/2023
+COMP8057,Statistical Computer Science IV,01/09/2023,31/12/2023
+COMP1059,Advanced Computer Science V,01/09/2023,31/12/2023
+COMP2059,Introductory Computer Science V,01/09/2023,31/12/2023
+COMP3059,Fundamental Computer Science V,01/09/2023,31/12/2023
+COMP4059,Applied Computer Science V,01/09/2023,31/12/2023
+COMP5059,Theoretical Computer Science V,01/09/2023,31/12/2023
+COMP6059,Experimental Computer Science V,01/09/2023,31/12/2023
+COMP7059,Computational Computer Science V,01/09/2023,31/12/2023
+COMP8059,Statistical Computer Science V,01/09/2023,31/12/2023
+ENGI1061,Advanced Engineering I,01/09/2023,31/12/2023
+ENGI2061,Introductory Engineering I,01/09/2023,31/12/2023
+ENGI3061,Fundamental Engineering I,01/09/2023,31/12/2023
+ENGI4061,Applied Engineering I,01/09/2023,31/12/2023
+ENGI5061,Theoretical Engineering I,01/09/2023,31/12/2023
+ENGI6061,Experimental Engineering I,01/09/2023,31/12/2023
+ENGI7061,Computational Engineering I,01/09/2023,31/12/2023
+ENGI8061,Statistical Engineering I,01/09/2023,31/12/2023
+ENGI1063,Advanced Engineering II,01/09/2023,31/12/2023
+ENGI2063,Introductory Engineering II,01/09/2023,31/12/2023
+ENGI3063,Fundamental Engineering II,01/09/2023,31/12/2023
+ENGI4063,Applied Engineering II,01/09/2023,31/12/2023
+ENGI5063,Theoretical Engineering II,01/09/2023,31/12/2023
+ENGI6063,Experimental Engineering II,01/09/2023,31/12/2023
+ENGI7063,Computational Engineering II,01/09/2023,31/12/2023
+ENGI8063,Statistical Engineering II,01/09/2023,31/12/2023
+ENGI1065,Advanced Engineering III,01/09/2023,31/12/2023
+ENGI2065,Introductory Engineering III,01/09/2023,31/12/2023
+ENGI3065,Fundamental Engineering III,01/09/2023,31/12/2023
+ENGI4065,Applied Engineering III,01/09/2023,31/12/2023
+ENGI5065,Theoretical Engineering III,01/09/2023,31/12/2023
+ENGI6065,Experimental Engineering III,01/09/2023,31/12/2023
+ENGI7065,Computational Engineering III,01/09/2023,31/12/2023
+ENGI8065,Statistical Engineering III,01/09/2023,31/12/2023
+ENGI1067,Advanced Engineering IV,01/09/2023,31/12/2023
+ENGI2067,Introductory Engineering IV,01/09/2023,31/12/2023
+ENGI3067,Fundamental Engineering IV,01/09/2023,31/12/2023
+ENGI4067,Applied Engineering IV,01/09/2023,31/12/2023
+ENGI5067,Theoretical Engineering IV,01/09/2023,31/12/2023
+ENGI6067,Experimental Engineering IV,01/09/2023,31/12/2023
+ENGI7067,Computational Engineering IV,01/09/2023,31/12/2023
+ENGI8067,Statistical Engineering IV,01/09/2023,31/12/2023
+ENGI1069,Advanced Engineering V,01/09/2023,31/12/2023
+ENGI2069,Introductory Engineering V,01/09/2023,31/12/2023
+ENGI3069,Fundamental Engineering V,01/09/2023,31/12/2023
+ENGI4069,Applied Engineering V,01/09/2023,31/12/2023
+ENGI5069,Theoretical Engineering V,01/09/2023,31/12/2023
+ENGI6069,Experimental Engineering V,01/09/2023,31/12/2023
+ENGI7069,Computational Engineering V,01/09/2023,31/12/2023
+ENGI8069,Statistical Engineering V,01/09/2023,31/12/2023
+ECON1071,Advanced Economics I,01/09/2023,31/12/2023
+ECON2071,Introductory Economics I,01/09/2023,31/12/2023
+ECON3071,Fundamental Economics I,01/09/2023,31/12/2023
+ECON4071,Applied Economics I,01/09/2023,31/12/2023
+ECON5071,Theoretical Economics I,01/09/2023,31/12/2023
+ECON6071,Experimental Economics I,01/09/2023,31/12/2023
+ECON7071,Computational Economics I,01/09/2023,31/12/2023
+ECON8071,Statistical Economics I,01/09/2023,31/12/2023
+ECON1073,Advanced Economics II,01/09/2023,31/12/2023
+ECON2073,Introductory Economics II,01/09/2023,31/12/2023
+ECON3073,Fundamental Economics II,01/09/2023,31/12/2023
+ECON4073,Applied Economics II,01/09/2023,31/12/2023
+ECON5073,Theoretical Economics II,01/09/2023,31/12/2023
+ECON6073,Experimental Economics II,01/09/2023,31/12/2023
+ECON7073,Computational Economics II,01/09/2023,31/12/2023
+ECON8073,Statistical Economics II,01/09/2023,31/12/2023
+ECON1075,Advanced Economics III,01/09/2023,31/12/2023
+ECON2075,Introductory Economics III,01/09/2023,31/12/2023
+ECON3075,Fundamental Economics III,01/09/2023,31/12/2023
+ECON4075,Applied Economics III,01/09/2023,31/12/2023
+ECON5075,Theoretical Economics III,01/09/2023,31/12/2023
+ECON6075,Experimental Economics III,01/09/2023,31/12/2023
+ECON7075,Computational Economics III,01/09/2023,31/12/2023
+ECON8075,Statistical Economics III,01/09/2023,31/12/2023
+ECON1077,Advanced Economics IV,01/09/2023,31/12/2023
+ECON2077,Introductory Economics IV,01/09/2023,31/12/2023
+ECON3077,Fundamental Economics IV,01/09/2023,31/12/2023
+ECON4077,Applied Economics IV,01/09/2023,31/12/2023
+ECON5077,Theoretical Economics IV,01/09/2023,31/12/2023
+ECON6077,Experimental Economics IV,01/09/2023,31/12/2023
+ECON7077,Computational Economics IV,01/09/2023,31/12/2023
+ECON8077,Statistical Economics IV,01/09/2023,31/12/2023
+ECON1079,Advanced Economics V,01/09/2023,31/12/2023
+ECON2079,Introductory Economics V,01/09/2023,31/12/2023
+ECON3079,Fundamental Economics V,01/09/2023,31/12/2023
+ECON4079,Applied Economics V,01/09/2023,31/12/2023
+ECON5079,Theoretical Economics V,01/09/2023,31/12/2023
+ECON6079,Experimental Economics V,01/09/2023,31/12/2023
+ECON7079,Computational Economics V,01/09/2023,31/12/2023
+ECON8079,Statistical Economics V,01/09/2023,31/12/2023
+PSYC1081,Advanced Psychology I,01/09/2023,31/12/2023
+PSYC2081,Introductory Psychology I,01/09/2023,31/12/2023
+PSYC3081,Fundamental Psychology I,01/09/2023,31/12/2023
+PSYC4081,Applied Psychology I,01/09/2023,31/12/2023
+PSYC5081,Theoretical Psychology I,01/09/2023,31/12/2023
+PSYC6081,Experimental Psychology I,01/09/2023,31/12/2023
+PSYC7081,Computational Psychology I,01/09/2023,31/12/2023
+PSYC8081,Statistical Psychology I,01/09/2023,31/12/2023
+PSYC1083,Advanced Psychology II,01/09/2023,31/12/2023
+PSYC2083,Introductory Psychology II,01/09/2023,31/12/2023
+PSYC3083,Fundamental Psychology II,01/09/2023,31/12/2023
+PSYC4083,Applied Psychology II,01/09/2023,31/12/2023
+PSYC5083,Theoretical Psychology II,01/09/2023,31/12/2023
+PSYC6083,Experimental Psychology II,01/09/2023,31/12/2023
+PSYC7083,Computational Psychology II,01/09/2023,31/12/2023
+PSYC8083,Statistical Psychology II,01/09/2023,31/12/2023
+PSYC1085,Advanced Psychology III,01/09/2023,31/12/2023
+PSYC2085,Introductory Psychology III,01/09/2023,31/12/2023
+PSYC3085,Fundamental Psychology III,01/09/2023,31/12/2023
+PSYC4085,Applied Psychology III,01/09/2023,31/12/2023
+PSYC5085,Theoretical Psychology III,01/09/2023,31/12/2023
+PSYC6085,Experimental Psychology III,01/09/2023,31/12/2023
+PSYC7085,Computational Psychology III,01/09/2023,31/12/2023
+PSYC8085,Statistical Psychology III,01/09/2023,31/12/2023
+PSYC1087,Advanced Psychology IV,01/09/2023,31/12/2023
+PSYC2087,Introductory Psychology IV,01/09/2023,31/12/2023
+PSYC3087,Fundamental Psychology IV,01/09/2023,31/12/2023
+PSYC4087,Applied Psychology IV,01/09/2023,31/12/2023
+PSYC5087,Theoretical Psychology IV,01/09/2023,31/12/2023
+PSYC6087,Experimental Psychology IV,01/09/2023,31/12/2023
