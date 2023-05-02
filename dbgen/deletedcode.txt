@@ -35,3 +35,17 @@
 #         print(e)
 #         #print(adminID)
 #         return make_response({'error': 'User not found'}, 400)
+
+
+CREATE TABLE threads (
+    threadid SERIAL PRIMARY KEY,
+    forumid    VARCHAR(8) NOT NULL,
+    threadname VARCHAR(255) NOT NULL,
+    threadreply BOOLEAN NOT NULL,
+    replyno INTEGER NOT NULL,
+    replycontent VARCHAR(255) NOT NULL,
+    CONSTRAINT threads_forumid_fk FOREIGN KEY (forumid)
+        REFERENCES forums (forumid)
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+);

@@ -379,22 +379,165 @@ def EnrollStudent():
     
 #----------------------------------------------------Course Container---------------------------------------------------------#
 #Retrieve Members of a courses container
-#@app.route('/RetrieveMembers', methods=['GET'])
-#def RetrieveMembers
+@app.route('/RetrieveMembers', methods=['GET'])
+def RetrieveMembers():
+    try:
+        psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
+        cursor = psql.cursor()
+       
+
+        return {"success":"Calendar Event Created"}
+    except Exception as e:
+        print(e)
+        return {"error":e}    
+
+    
 #
 #
 #Create Calendar Event for course
+@app.route('/CalendarEvents', methods=['POST'])
+def CalendarEvents():
+    try:
+        psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
+        cursor = psql.cursor()
+        data= request.get_json()
+        eventid = data['eventid']
+        courseid = data['courseid']
+        eventname = data['eventname']
+        eventdate = data['evendate']
+        
+        cursor.execute(f"INSERT INTO calendarevent VALUES('{eventid}','{courseid}','{eventname}','{eventdate}');")
+        psql.commit()
+        cursor.close()
+        psql.close()
+       
+        return {"success":"Calendar Event Created"}
+    except Exception as e:
+        print(e)
+        return {"error":'Failed to create Calendar event'}    
+
+
 # 
 # Retrieve Calendar Event
-# 
+@app.route('/GetCalendarEvents/<courseid>',methods=['GET'])
+def GetCalendarEvents(courseid):
+    try:
+        psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
+        cursor = psql.cursor()
+        cursor.execute(f"SELECT * FROM calendarevent WHERE Courseid='{courseid}'")
+        events=[]
+        for eventid, courseid,eventname,eventdate in cursor:
+            data = {}
+            data['eventid'] = eventid
+            data['courseid'] = courseid
+            data['eventname'] = eventname
+            data['eventdate'] = eventdate
+            events.append(data)
+        cursor.close()
+        psql.close()
+        return make_response(events, 200)
+    except Exception as e:
+        print(e)
+        return {"error":'Failed to retrieve Calendar events'}   
 # 
 # Create Forum for course
-# 
+@app.route('/CreateForum', methods=['POST'])
+def CreateForum():
+    try:
+        psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
+        cursor = psql.cursor()
+        data = request.get_json()
+        forumid= data['forumid']
+        courseid= data['courseid']
+        discussiontopic= data['discussiontopic']
+        datestarted=data['datestarted']
+        active=data['active']
+        cursor.execute(f"INSERT INTO forums VALUES('{forumid}','{courseid}','{discussiontopic}','{datestarted}','{active}')")
+        psql.commit()
+        cursor.close()
+        psql.close()
+        return make_response({"success" : "The forum has been added"}, 201)
+    except Exception as e:
+        print(e)
+        return {"error":'Failed to create forum '}  
+
+
+
+
 # 
 # Retrieve Forum for course
+@app.route('/GetCourseForum/<courseid>',methods=['GET'])
+def GetCourseForum(courseid):
+    try:
+        psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
+        cursor = psql.cursor()
+        cursor.execute(f"SELECT active, forumid, courseid, discussiontopic, datestarted FROM forums WHERE courseid ='{courseid}'")
+        forum = []
+        for active, forumid, courseid, discussiontopic, datestarted in cursor:
+            forumdict = {}
+            forumdict['forumid'] = forumid
+            forumdict['courseid'] = courseid
+            forumdict['discussiontopic'] = discussiontopic
+            forumdict['datestarted'] = datestarted
+            forumdict['active'] = active
+            forum.append(forumdict)
+
+        cursor.close
+        psql.close
+        return make_response(forum, 200)
+    except Exception as e:
+        print(e)
+        return {"error":'Failed to retrieve forums'}  
+
+
+#Cretae Discussion Thread
+@app.route("/CreateDiscussionThread", methods = ['POST'])
+def CreateDiscussionThread():
+    try:
+        psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
+        cursor = psql.cursor()
+        data = request.get_json()
+        threadid = data['threadid']  
+        forumid = data['forumid']
+        threadname = data['threadname']
+        threadreply = data['threadreply']
+        replyno = data['replyno']
+        replycontent = data['replycontent']
+        cursor.execute(f"INSERT INTO threads VALUES('{threadid}','{forumid}','{threadname}','{threadreply}',{replyno},'{replycontent}');") 
+        psql.commit()
+        cursor.close()
+        psql.close()
+        return make_response({"success" : "The thread has been added"}, 201)
+    except Exception as e:
+        print(e)
+        return {"error":'Failed to create Thread '}  
+
+
 # 
 # Retrieve discussion thread for forum
-# 
+@app.route("/GetDiscussionThread/<forumid>", methods = ['GET'])
+def GetDiscussionThread(forumid):
+    try:
+        psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
+        cursor = psql.cursor()
+        cursor.execute(f"SELECT * FROM threads WHERE forumid = '{forumid}'")
+        threads = []
+        for  threadid, forumid, threadname, threadreply, replyno, replycontent in cursor:
+            discuss_thread = {}
+            discuss_thread['threadid'] = threadid
+            discuss_thread['forumid'] = forumid
+            discuss_thread['threadname'] = threadname
+            discuss_thread['threadreply'] = threadreply
+            discuss_thread['replyno'] = replyno
+            discuss_thread['replycontent'] = replycontent
+            threads.append(discuss_thread)
+        cursor.close()
+        psql.close()
+        return make_response(threads, 200)
+    except Exception as e:
+        print(e)
+        return {"error":'Failed to retrieve threads'} 
+
 # 
 # 
 # Create Assignment
@@ -496,8 +639,27 @@ def StudentReport():
 
 
 # Top 10 most enrolled course
-@app.route('/mostenrolledreport', methods=['GET'])
-def mostenrolledreport():
+@app.route('/MostEnrolledCourseReport', methods=['GET'])
+def MostEnrolledCourseReport():
+    try:
+        psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
+        cursor = psql.cursor()
+        sql='SELECT c."ccode",c."courseName", COUNT(DISTINCT e.userid) AS enrolled FROM enroll e JOIN courses c ON e.courseid = c."ccode" GROUP BY c."ccode", c."courseName" ORDER BY enrolled DESC LIMIT 10;'
+        cursor.execute(sql)
+        courselist=[]
+        for ccode,courseName, enrolled in cursor:
+            course = {}
+            course["ccode"] = ccode
+            course["courseName"] = courseName
+            course["enrolled"] = enrolled
+            
+            courselist.append(course)
+        cursor.close()
+        psql.close()        
+        return make_response({'courselist': courselist}, 200)
+    except Exception as e:
+        print(e)
+        return make_response({'error':'An error has occured, could not return the top 10 most enrolled courses'}, 400)
 # 
 
 
@@ -505,13 +667,61 @@ def mostenrolledreport():
 # Top 10 students with highest overall averages
 
 
-#Total number of courses
-# 
-# 
-# Total number of lecturers
-# 
-# 
 # Total number of students
+@app.route("/TotalStudents",methods=['GET'])
+def TotalStudents():
+    try:
+        psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
+        cursor = psql.cursor()
+        sql='SELECT COUNT(*) FROM Students;'
+        cursor.execute(sql)
+        result = cursor.fetchone()[0]
+        cursor.close()
+        psql.close()        
+        message = "There are {} students in the database.".format(result)
+        return make_response(message, 200)
+    except Exception as e:
+        print(e)
+        return make_response({'error':'An error has occured, could not return the total number of students in the database'}, 400)
+
+
+# Total number of lecturers
+@app.route('/TotalLecturers', methods=['GET'])
+def TotalLecturers():
+    try:
+        psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
+        cursor = psql.cursor()
+        sql='SELECT COUNT(*) FROM lecturers;'
+        cursor.execute(sql)
+        result = cursor.fetchone()[0]
+        cursor.close()
+        psql.close()        
+        message = "There are {} lecturers in the database.".format(result)
+        return make_response(message, 200)
+    except Exception as e:
+        print(e)
+        return make_response({'error':'An error has occured, could not return the number of lecturers in the database'}, 400)
+
+
+
+
+#Total number of courses
+@app.route('/TotalCourses', methods=['GET'])
+def TotalCourses():
+    try:
+        psql = psycopg2.connect(database='clonevle_db', user='postgres', password='3072001', host='localhost', port='5432' )
+        cursor = psql.cursor()
+        sql='SELECT COUNT(*) FROM courses;'
+        cursor.execute(sql)
+        result = cursor.fetchone()[0]
+        cursor.close()
+        psql.close()        
+        message = "There are {} courses in the database.".format(result)
+        return make_response(message, 200)
+    except Exception as e:
+        print(e)
+        return make_response({'error':'An error has occured, could not return the number of courses in the database'}, 400)
+
 # 
 # 
 # #
